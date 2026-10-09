@@ -99,11 +99,6 @@ def gcd_reku(n1:int, n2:int)->int:
     else:
         return gcd_reku(n1, n2-n1)
 
-
-
-
-print(fibonacci_reku(5))
-
         
 
 
