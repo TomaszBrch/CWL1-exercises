@@ -1,7 +1,7 @@
 
 sum=0
 while True:    
-    calkowita:int = int(input())
+    calkowita:int = int(input("Wczytaj następną liczbę: "))
 
     if calkowita == 0:
         break
