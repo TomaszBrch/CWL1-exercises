@@ -36,7 +36,13 @@ def mean(numbers:list[int])->float:
 
     return(round(mean,2))
 
-print(mean(numbers))
+def display_numbers(numbers:list[int]):
+    for number in numbers:
+        print(f'{numbers.index(number)}: {number} ')
 
+print(f'Minimum to: {minimum(numbers)}')
+print(f'Maksimum to: {maximum(numbers)}')
+print(f'Średnia to: {mean(numbers)}')
+display_numbers(numbers)
 
     
