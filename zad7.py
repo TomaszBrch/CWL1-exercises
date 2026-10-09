@@ -16,6 +16,14 @@ def maximum(numbers:list[int])->int:
         if number > maxim: # noqa: PLR1730
             maxim = number
     return int(maxim)
-        
+
+def summation(numbers:list[int])->int:
+
+    sum = 0
+    
+    for number in numbers:
+        sum += number
+    return(sum)
+
 
     
