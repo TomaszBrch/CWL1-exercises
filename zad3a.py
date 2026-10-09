@@ -2,7 +2,7 @@ import sys
 
 points:int = int(input("Points: "))
 
-def assign_grade(points:int)->tuple[float, str]:
+def assign_grade(points:int)->tuple[float,str]:
         if points > 100 or points < 0:
             print("Error: points out of range")
             sys.exit()
@@ -16,12 +16,10 @@ def assign_grade(points:int)->tuple[float, str]:
             return((4.0, "db"))
         elif points >= 80 and points <= 89:
             return((4.5, "db plus"))
-        elif points >=90 and points <=100:
-            return((5.0, "bdb"))
         else:
-            sys.exit()
+            return((5.0, "bdb"))
 
-grade = assign_grade(points)
+grade:tuple[float,str] = assign_grade(points)
 
 print(f"{grade[1]} ({grade[0]})")
 
