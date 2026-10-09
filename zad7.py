@@ -1,4 +1,4 @@
-numbers = [4, 8, 15, 16, 23, 48]
+numbers = [4, 8, 15, 16, 23, 47]
 
 def minimum(numbers:list[int])->int:
     
@@ -24,6 +24,19 @@ def summation(numbers:list[int])->int:
     for number in numbers:
         sum += number
     return(sum)
+
+def mean(numbers:list[int])->float:
+
+    count = 0
+    sum = 0
+    for number in numbers:
+        count += 1  # noqa: RUF100, SIM113
+        sum += number
+    mean = sum / count
+
+    return(round(mean,2))
+
+print(mean(numbers))
 
 
     
